@@ -27,6 +27,8 @@ writing a new superseding ADR and updating the old one's status.
 - [0008 — Bootstrap script is a single staged bash script delegating per-skill installs](0008-bootstrap-script-design/decision.md)
 - [0009 — Personal decisions follow Nygard ADR format regardless of project shape](0009-personal-decisions-nygard-regardless/decision.md)
 - [0010 — Cross-repo work items live in personal trackers; per-repo items reference upstream](0010-cross-repo-issue-tracking/decision.md)
+- [0011 — Task slugs use date-anchored format with optional tracker ID](0011-task-slug-convention/decision.md)
+- [0012 — Per-task artifacts live in `scratch/<slug>/` parallel to `TODO.md`](0012-task-artifact-directories.md)
 
 ## Cross-references
 
