@@ -57,13 +57,15 @@ are present when the task has one in a tracker, and the bare ID isn't
 self-disambiguating. Description is short, kebab-case, three to five
 words.
 
-Tracker abbreviations:
+Tracker abbreviations are recorded in the workspace-conventions skill's
+tracker-abbreviations registry. Slugs use whichever abbreviation the
+registry assigns to a tracker, or no prefix when the tracker's IDs are
+self-disambiguating (per the registry's rule). New trackers are added
+to the registry without requiring a new ADR.
 
-- No prefix needed for trackers whose ID is self-identifying (Jira:
-  `HP-123`, `JIRA-456` — the project key already disambiguates).
-- `gh` for GitHub Issues, where the bare number is ambiguous.
-- `lin` for Linear; other trackers add their own short prefixes as
-  needed.
+Per ADR 0013, changing what a tracker abbreviation means or adding new
+required properties to the registry is a change to this ADR's rule and
+requires a superseding ADR.
 
 When a task is referenced by multiple trackers, pick the one most
 useful as the primary anchor for the slug, and record the others
