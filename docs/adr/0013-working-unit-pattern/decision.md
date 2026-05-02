@@ -16,7 +16,7 @@ directory of per-entry artifacts.
   root, with the workspace's `README.md` (stable doc) alongside.
 - ADR 0012 adds `scratch/<slug>/` (artifact dir) parallel to
   `TODO.md`, with per-task content inside each slug directory.
-- A pending nx2 proposal observes the same shape inside individual
+- A pending proposal observes the same shape inside individual
   ADRs: `decision.md` (stable doc), `checklist.md` (mutable index),
   and `scratch/<slug>/` (artifact dir) parallel to the checklist.
 
