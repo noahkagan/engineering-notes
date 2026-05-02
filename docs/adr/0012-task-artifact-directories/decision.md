@@ -4,7 +4,7 @@ Date: 2026-05-01
 
 ## Status
 
-Accepted
+Superseded by [ADR 0014](../0014-slug-only-indices/decision.md).
 
 ## Context
 

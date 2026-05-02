@@ -30,6 +30,7 @@ writing a new superseding ADR and updating the old one's status.
 - [0011 — Task slugs use date-anchored format with optional tracker ID](0011-task-slug-convention/decision.md)
 - [0012 — Per-task artifacts live in `scratch/<slug>/` parallel to `TODO.md`](0012-task-artifact-directories/decision.md)
 - [0013 — The working-unit pattern: structural recursion across scopes](0013-working-unit-pattern/decision.md)
+- [0014 — Mutable indices hold slugs only; detail lives in `scratch/<slug>/README.md`](0014-slug-only-indices/decision.md) (supersedes 0012)
 
 ## Cross-references
 
