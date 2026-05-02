@@ -31,6 +31,7 @@ writing a new superseding ADR and updating the old one's status.
 - [0012 — Per-task artifacts live in `scratch/<slug>/` parallel to `TODO.md`](0012-task-artifact-directories/decision.md)
 - [0013 — The working-unit pattern: structural recursion across scopes](0013-working-unit-pattern/decision.md)
 - [0014 — Mutable indices hold slugs only; detail lives in `scratch/<slug>/README.md`](0014-slug-only-indices/decision.md) (supersedes 0012)
+- [0015 — Working-unit task dependencies live in `deps.json` next to the index](0015-unit-level-deps/decision.md)
 
 ## Cross-references
 
