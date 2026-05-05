@@ -32,6 +32,8 @@ writing a new superseding ADR and updating the old one's status.
 - [0013 — The working-unit pattern: structural recursion across scopes](0013-working-unit-pattern/decision.md)
 - [0014 — Mutable indices hold slugs only; detail lives in `scratch/<slug>/README.md`](0014-slug-only-indices/decision.md) (supersedes 0012)
 - [0015 — Working-unit task dependencies live in `deps.json` next to the index](0015-unit-level-deps/decision.md)
+- [0016 — Cross-platform structure for Rust crates](0016-cross-platform-rust-crates/decision.md)
+- [0017 — Spec-driven coding as the default workflow](0017-spec-driven-coding/decision.md)
 
 ## Cross-references
 
