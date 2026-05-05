@@ -78,26 +78,17 @@ have ambiguities at the implementation boundary.
 
 ### Plans phase the same way
 
-A plan that decomposes coding work — a todo list, a project outline, a
-roadmap, instructions to another agent — is structured around these five
-stages as explicit phases. The stages are the phases.
+Plans about coding work — todo lists, project outlines, roadmaps,
+instructions to another agent — are phased by the same five stages
+rather than organized by component. A flat task list like "implement
+login, add tests, hook up the database, write the spec doc" is the
+failure mode this ADR exists to prevent: it puts the stages in the
+wrong order, intermixes them, and makes it impossible to tell when one
+phase is done before the next begins.
 
-- **Group tasks by stage, not by component.** A plan section called
-  "Stage 4 — Tests" lists every test, regardless of which component they
-  target. A plan section called "Authentication module" that mixes spec,
-  interface, and implementation steps blurs the gates.
-- **Make stage boundaries explicit.** Each phase has a clear exit
-  condition — "spec accepted", "interface reviewed", "tests written and
-  failing", "tests passing" — so it is obvious when the plan moves on.
-- **Order phases as the stages are ordered.** Implementation tasks
-  proposed before the interface is settled signal a plan that will be
-  rewritten halfway through.
-- **Adaptive sizing applies to plans too.** A trivial task does not need
-  a five-phase plan; for trivial work, the plan is the doing. But once a
-  plan exists at all, it is phased.
-
-A flat task list like "implement login, add tests, hook up the database,
-write the spec doc" is the failure mode this ADR exists to prevent.
+The operational rules for phasing a plan (group by stage not component;
+explicit exit conditions; order as the stages are ordered) live in the
+`spec-driven-coding` skill.
 
 ## Consequences
 
@@ -158,13 +149,6 @@ engineers and are often followed implicitly. Codifying them adds nothing
 for that audience. The audience this ADR is for, however, includes AI
 agents and any future-self working under time pressure — both of which
 benefit from the gates being explicit, named, and ordered.
-
-**Encode the workflow only as a skill, no ADR.** A skill captures *how*
-to apply a workflow. An ADR captures *why* and is the right place for
-the rationale, the alternatives considered, and the commitment to the
-ordering. The skill (`spec-driven-coding`) applies this ADR; the ADR is
-where its rules are settled. Per ADR-0009, personal decisions take the
-Nygard form regardless of project shape.
 
 ## References
 
