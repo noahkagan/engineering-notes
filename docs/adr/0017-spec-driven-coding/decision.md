@@ -132,11 +132,24 @@ explicit exit conditions; order as the stages are ordered) live in the
 
 ## Alternatives considered
 
-**Test-first without explicit specification.** TDD-style red/green/refactor
-pre-supposes that the spec is settled before tests are written. In
-practice the spec is the most common point of drift, and tests written
-against an unclear spec encode the unclarity. Rejected as the *primary*
-discipline; spec-first subsumes test-first.
+**Canon TDD (Beck): tests-first, interface emerges through the test.**
+In Beck's formulation, writing the failing test *is* the design act;
+the interface is whatever shape the test forces. This works well in a
+human pair-programming setting where the same person designs both
+sides. It works less well as a default for AI agents and for
+specification at scale, for two reasons. First, the spec is the most
+common point of drift, and a test written against an unclear spec
+encodes the unclarity into the contract. Second, tests written before
+an interface is settled tend to commit to whatever signature feels
+natural in the first test, which is then expensive to evolve. Stage 3
+(interface design) before stage 4 (tests) is closer to Parnas's
+information hiding, Meyer's Design-by-Contract, and Cleanroom's
+black-box specification — all of which fix the contract before the
+verifying artifact. The trade-off is real: stage-3-first loses the
+"writing the test pressures the interface" benefit Canon TDD
+emphasizes. Stage 2 (specification review) is the deliberate
+substitute. Rejected as the *primary* discipline; the design-first /
+test-second ordering wins on net for AI-assisted work.
 
 **Specification-then-implementation, no interface stage.** Skipping
 interface design tends to produce signatures shaped by whichever library
